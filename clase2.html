@@ -1,0 +1,93 @@
+<!--
+	ETIQUETAS OBSOLETAS
+	http://reference.sitepoint.com/html/elements-deprecated
+	http://reference.sitepoint.com/html/elements-proprietary
+	
+	Ejemplo de una estructura completa
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<html>
+	<head>
+		<title>Web semántica</title>
+		<!-- Metadatos de contenidos de la web -->
+		<meta charset="utf-8" />
+
+		<!-- Metadatos para los buscadores -->
+		<meta name="description" content="..." />
+		<meta name="keywords" content="..." />
+		<meta name="robots" content="..." /> <!-- Es un fichero, que indica a los motores de búsqueda
+		                                          por dónde pueden entrar y por dónde no pueden entrar -->
+
+		<!-- Hojas de estilo -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<!--[if IE]>
+			<link rel="stylesheet" type="text/css" href="css/ie.css">
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/print.css"> <!-- Para cuando voy a dar al botón
+		                                                                  imprimir -->
+
+		<!-- Javascript cargado desde CDN y fallback -->
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svm/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="favicon.ico" />
+    </head>
+
+    <body>
+    	<header>
+    		<h1 data-type="title">Este es el título h1</h1>
+    	</header>
+
+    	<article>
+    		<section>
+    			<header>
+    				<hgroup>
+    					<h2>Título h2 dentro del section</h2>
+    					<h3>Subtítulo dentro del section</h3>
+    				</hgroup>
+    			</header>
+    			<p>Lorem ipsum dolor sit amet</p>
+    			<ul>
+    				<li>lorem ipsum</li>
+    			</ul>
+    		</section>
+    	</article>
+
+    	<aside>
+    		<nav class="widget">
+    			<h2>Nube de etiqueta</h2>
+    			<a href="">Etiqueta</a>
+    			<a href="">Etiqueta</a>
+    			<a href="">Etiqueta</a>
+    			<a href="">Etiqueta</a>
+    			<a href="">Etiqueta</a>
+    		</nav>
+    	</aside>
+
+    	<footer>
+    		<!-- referencia microformatos: http://microformats.org/ -->
+    		<!-- mirar: http://microformats.org/wiki/hCard -->
+    		<ul class="vcard"> <!-- clases microformato -->
+    			<li class="fn n">
+    				<strong class="given-name">Guillermo</strong><strong class="additional-name">García</strong><br />
+    				<span class="org">El Ejemplo S. A.</span>
+    			</li>
+    			<li class="adr">
+    				<span class="street-address">Calle falsa 1</span><br />
+    				<span class="locality">una ciudad</span>
+    				<abbr class="region" title="Una region">UR</abbr>
+    				<span class="postal-code">94301</span>
+    				<abbr class="country-name" title="Un país">UP</abbr>
+    			</li>
+    			<li class="tel"><strong class="type" title="Teléfono del trabajo">Work</strong>: <span class="value">604-555-1234</span></li>
+    			<li class="url"><strong class="type" title="Sitio web oficial del trabajo">Work</strong>:<a href="http://ejemplo.com/" title="Ejemplo.com" class="value">http://ejemplo.com/</a></li>
+    		</ul>
+    	</footer>
+    	<!-- Javascript cargado desde local -->
+    	<script type="text/javascript" src="js/common.js"></script>
+    </body>
+</html>

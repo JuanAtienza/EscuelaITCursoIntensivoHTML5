@@ -1,0 +1,39 @@
+/* Ver normas para escribir CSS: https://github.com/Wakkos/CSS-Guidelines
+   ver: https://github.com/Wakkos/Wakkos-CSS-Framework 
+   Curso de Sass: https://www.youtube.com/playlist?list=PLwzKFCxxOMjPUOJitRL31rD1Zsd030sYX */
+
+.fontsize--small {
+	font-size: .9em;
+}
+
+.fontsize--big {
+	font-size: 2em;
+}
+
+.fontsize--huge {
+	font-size: 3em;
+}
+
+.texto-olive {
+	color: olive;
+	font-family: Arial, sans-serif;
+	text-shadow: 1px 1px black;
+}
+
+.colorbase {
+	color: olive;
+}
+
+.colorcomp {
+	color: pink;
+}
+
+p {
+	font-size: .8em;
+}
+
+@media all and (min-width: 30em) { /* a partir de 30em h1 es red, hasta 30em h1 es blue*/
+	p {
+		font-size: 1em;
+	}
+}

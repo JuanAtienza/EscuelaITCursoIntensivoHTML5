@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box; /* Para que padding no me afecte el tamaño de la caja.
+                               Si le ponemos 'box-sizing: border-box', quiere decir que nos va a tomar tanto el border, como el padding... como
+                               parte del tamaño total de la caja (osea el 24%).
+                               Nota- el '*' significa que esta regla se aplica a todo(a ul, li, ...) */
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    list-style: none;
+    width: 24%;
+    background-color: orange;
+    padding: .5em 1em;
+}
+h2 {
+    text-transform: uppercase;
+}
+article {
+    background-color: #888fa5;   
+    padding: .8em;
+    margin-bottom: 1em;
+}
+article p {
+	font-family: arial, sans-serif;
+}
+.list-footer a { /* no hace falta ponerle el li */
+	color: purple;
+}
+
+/* Como calculamos los em? Si yo quiero que sea a 780px, tengo que dividir 780/16(=48.75). Porque 16? porque 
+   el em se basa en el tamaño del texto del contenedor, osea en font-size, y el font-size de la raíz (el html)
+   que por defecto es 16px */
+@media all and (min-width: 48.75em) { /* Utilizamos esto, para que cuando utilizemos el Zoom no se descoloque*/
+	article{ 
+		width: 31.3333%;
+		/*float: left;*/
+		display: inline-block;
+		margin: 0 1%;
+		/* margin: 0 0 0 0; superior, derecha, inferior, izquierda
+		   margin: 0 0 ; superior e inferior, izquierda derecha
+		   margin: 0 0 0; superior, izquierda derecha, inferior
+		*/
+	}
+}
